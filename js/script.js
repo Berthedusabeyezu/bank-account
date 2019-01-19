@@ -22,18 +22,20 @@ $(document).ready(function() {
     var initDeposit = parseInt($("#initDeposit").val());
     acc = new Account(name, initDeposit);
     accs.push(acc);  
-    $("#currentBalance").text("$" + acc.balance);
+    $("#currentBalance").text("rwf" + acc.balance);
     $("#nameShow").text(acc.name);
     $("#name").val(""); 
     $("#initDeposit").val("");
     $(".output").show();
+    
+    $(".accinfo").append('<label id="radio-' + acc.name + '" class="radio-inline"><input type="radio" name="accounts" value="' + acc.name + '">' + acc.name + '</label><br>');
 
     $("#radio-" + acc.name).last().click(function(event) {
       var test = $("input:radio[name=accounts]:checked").val();
-     
+      event.preventDefault();
       for (var i = 0; i < accs.length; i++) {
         if (accs[i].name === test) {
-          $("#currentBalance").text("$" + accs[i].balance);
+          $("#currentBalance").text("rwf" + accs[i].balance);
           $("#nameShow").text(accs[i].name);
           $("#name").val("");
           $("#initDeposit").val("");

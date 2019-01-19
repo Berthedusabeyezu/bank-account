@@ -1,5 +1,5 @@
 body {
-  /*background-color: #F2F2F2;*/
+  background-color: aquamarine;
 }
 .output {
   display: none;
@@ -9,14 +9,15 @@ body {
 h1 {
   border-bottom: 1px solid;
   font-weight: bolder;
-  color: #898989;
+  color: gray;
 }
 
 .col-md-6 {
   background-color: #F2F2F2;
   padding: 30px;
   min-height: 400px;
-  border: 1px #fff solid;
+  border: 1px solid black;
 }
   
+    
     
