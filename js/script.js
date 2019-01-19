@@ -48,7 +48,7 @@ $(document).ready(function() {
   $("#formWithDep").submit(function(event) {
     event.preventDefault();
     var accountName = $("#accountName").val();
-    var deposit = $("#deposit").val();
+    var deposit = $("#deposit").val(); 
     var withdraw = $("#withdraw").val();
 
     if (deposit === "") { 
