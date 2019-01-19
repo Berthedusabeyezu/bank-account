@@ -42,7 +42,7 @@ $(document).ready(function() {
           $(".output").show();
         } 
       }
-    }); 
+    });  
   }) 
 
   $("#formWithDep").submit(function(event) {
