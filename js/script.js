@@ -25,7 +25,7 @@ $(document).ready(function() {
     accs.push(acc);  
     $("#currentBalance").text("$" + acc.balance);
     $("#nameShow").text(acc.name);
-    $("#name").val("");
+    $("#name").val(""); 
     $("#initDeposit").val("");
     $(".output").show();
 
