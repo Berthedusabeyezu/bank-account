@@ -25,7 +25,7 @@ $(document).ready(function() {
     accs.push(acc);
 
 
-    //output
+    
     $("#currentBalance").text("$" + acc.balance);
     $("#nameShow").text(acc.name);
     $("#name").val("");
@@ -33,8 +33,7 @@ $(document).ready(function() {
     $(".output").show();
 
 
-    $(".accinfo").append('<label id="radio-' + acc.name + '" class="radio-inline"><input type="radio" name="accounts" value="' + acc.name + '">' + acc.name + '</label><br>');
-
+   
 
     
 
