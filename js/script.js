@@ -43,8 +43,7 @@ $(document).ready(function() {
         } 
       }
     });
-
-  })
+  }) 
 
   $("#formWithDep").submit(function(event) {
     event.preventDefault();
