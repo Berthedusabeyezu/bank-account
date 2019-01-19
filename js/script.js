@@ -40,9 +40,7 @@ $(document).ready(function() {
 
     $("#radio-" + acc.name).last().click(function(event) {
       var test = $("input:radio[name=accounts]:checked").val();
-      // $("input:radio[name=accounts]:checked").checked = true;
-      // evt.stopPropagation();
-      // event.preventDefault();
+     
 
       for (var i = 0; i < accs.length; i++) {
         if (accs[i].name === test) {
