@@ -23,8 +23,6 @@ $(document).ready(function() {
 
     acc = new Account(name, initDeposit);
     accs.push(acc);
-
-
     
     $("#currentBalance").text("$" + acc.balance);
     $("#nameShow").text(acc.name);
@@ -32,15 +30,9 @@ $(document).ready(function() {
     $("#initDeposit").val("");
     $(".output").show();
 
-
-   
-
-    
-
     $("#radio-" + acc.name).last().click(function(event) {
       var test = $("input:radio[name=accounts]:checked").val();
      
-
       for (var i = 0; i < accs.length; i++) {
         if (accs[i].name === test) {
           $("#currentBalance").text("$" + accs[i].balance);
@@ -48,7 +40,7 @@ $(document).ready(function() {
           $("#name").val("");
           $("#initDeposit").val("");
           $(".output").show();
-        }
+        } 
       }
     });
 
