@@ -51,7 +51,7 @@ $(document).ready(function() {
     var deposit = $("#deposit").val();
     var withdraw = $("#withdraw").val();
 
-    if (deposit === "") {
+    if (deposit === "") { 
       deposit = 0;
     } else {
       deposit = parseInt(deposit);
