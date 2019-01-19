@@ -20,7 +20,6 @@ $(document).ready(function() {
     event.preventDefault();
     var name = $("#name").val(); 
     var initDeposit = parseInt($("#initDeposit").val());
-
     acc = new Account(name, initDeposit);
     accs.push(acc);  
     $("#currentBalance").text("$" + acc.balance);
