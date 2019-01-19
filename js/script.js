@@ -18,11 +18,11 @@ var accs = [];
 $(document).ready(function() {
   $("#formNewAccount").submit(function(event) {
     event.preventDefault();
-    var name = $("#name").val();
+    var name = $("#name").val(); 
     var initDeposit = parseInt($("#initDeposit").val());
 
     acc = new Account(name, initDeposit);
-    accs.push(acc);
+    accs.push(acc); 
     
     $("#currentBalance").text("$" + acc.balance);
     $("#nameShow").text(acc.name);
